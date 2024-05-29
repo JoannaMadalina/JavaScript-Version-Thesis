@@ -1,0 +1,218 @@
+/* All page */
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Applying font-family to headings and paragraphs */
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Archivo Narrow", sans-serif !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+/* Styles for the countries card */
+.countries-card {
+    position: absolute;
+    right: 3rem; 
+    top: 5.88rem;
+    z-index: 100;
+    width: 27%; 
+    box-shadow: 10px 8px 0px 0px #00000040;
+}
+
+.countries-card input {
+    padding: 4px 24px 4px 24px;
+    background: #DEDEDE;
+    border-radius: 14px;
+    border: none;
+    outline: none; 
+}
+
+/*Board dnd styling */
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 768px;
+    height: 100vh;
+
+    overflow: hidden;
+
+    /*margin: 0 auto;*/
+    padding: 15px;
+}
+
+.flexbox .board {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 300px;
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+    padding: 15px;
+}
+
+.flexbox .board .card {
+    padding: 15px 25px;
+    background-color: white;
+
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* All product styling */
+.flex-box {
+    display: flex;
+    justify-content: flex-start; /* Adjust as needed */
+    align-items: flex-start; /* Adjust as needed */
+
+    width: 100vw; /* Set width to 100% of viewport width */
+    height: 100vh;
+
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Disable vertical scrolling */
+
+    padding: 15px;
+}
+
+.flex-box .slider {
+    display: flex;
+    flex-direction: row; /* Make slider horizontal */
+
+    max-width: 100%; /* Set maximum width to 100% of parent */
+    height: 100%; /* Match parent height */
+
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+
+    padding: 15px;
+}
+
+.flex-box .slider .card-dummy {
+    padding: 15px 25px;
+    background-color: white;
+
+    cursor: pointer;
+    margin-right: 15px; /* Adjust spacing between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Home Banner styles */
+.home-banner {
+    min-height: 400px; /* Minimum height */
+}
+
+.home-banner .inner-content {
+    height: 259px; /* Height */
+    width: 100%; /* Width */
+    background: #2D3540; /* Background color */
+    border-radius: 12px; /* Rounded corners */
+}
+
+.home-banner .inner-content .col-md-3,
+.home-banner .inner-content .row {
+    height: 100%; /* Height */
+    position: relative; /* Relative positioning */
+}
+
+.home-banner .inner-content .col-md-3 .left-content {
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Positioning from the left edge of the parent container */
+    bottom: .55rem; /* Positioning from the bottom edge of the parent container */
+}
+
+.home-banner .inner-content .col-md-3 .left-content p {
+    font-weight: 400; /* Font weight */
+    font-size: 25px; /* Font size */
+    line-height: 1px; /* Line height */
+    color: #ECEDEE; /* Text color */
+}
+
+.home-banner .inner-content .col-md-3 .left-content h2 {
+    font-size: 53px; /* Font size */
+    font-weight: 700; /* Font weight */
+    color: #ECEDEE; /* Text color */
+}
+
+.home-banner .inner-content .col-md-3 .right-content {
+    position: absolute; /* Absolute positioning */
+    right: 0; /* Positioning from the right edge of the parent container */
+    top: .55rem; /* Positioning from the top edge of the parent container */
+    color: #FFFF; /* Text color */
+}
+
+.home-banner .inner-content .col-md-3 .right-content p {
+    font-weight: 400; /* Font weight */
+    font-size: 25px; /* Font size */
+    color: #ECEDEE; /* Text color */
+    line-height: 1px; /* Line height */
+}
+
+.home-banner .inner-content .col-md-3 .right-content h2 {
+    font-size: 53px; /* Font size */
+    font-weight: 700; /* Font weight */
+    color: #ECEDEE; /* Text color */
+}
+
+.home-banner .inner-content .slider-center {
+    height: 400px; /* Height */
+    position: relative; /* Relative positioning */
+    top: -4.44rem; /* Positioning from the top edge of the parent container */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: -10px 11px 0px 0px #00000040; /* Box shadow */
+}
+
+.home-banner .inner-content .carousel-item {
+    height: 400px; /* Height */
+    position: relative; /* Relative positioning */
+}
+
+.home-banner .inner-content .carousel-item .top-info {
+    margin-top: 4rem; /* Margin top */
+    margin-left: 3rem; /* Margin left */
+}
+
+.home-banner .inner-content .carousel-item .top-info p {
+    font-weight: 400; /* Font weight */
+    font-size: 25px; /* Font size */
+    color: #FFF; /* Text color */
+    line-height: 1px; /* Line height */
+}
+
+.home-banner .inner-content .carousel-item .top-info h2 {
+    font-size: 53px; /* Font size */
+    font-weight: 700; /* Font weight */
+    color: #FFF; /* Text color */
+}
+
+.home-banner .inner-content .carousel-item .right-bottom-info {
+    position: absolute; /* Absolute positioning */
+    right: 1.33rem; /* Positioning from the right edge of the parent container */
+    bottom: .33rem; /* Positioning from the bottom edge of the parent container */
+}
+
+.home-banner .inner-content .carousel-item .right-bottom-info h1 {
+    color: #FFF; /* Text color */
+    font-weight: 400; /* Font weight */
+    font-size: 149px; /* Font size */
+}
+
+.carousel-item.f-item {
+    background: #3498DB !important; /* Background color */
+    border-radius: 12px; /* Rounded corners */
+}
